@@ -1,3 +1,6 @@
+"""
+program for calculator
+"""
 import calculator  # Imports the calculator module (calculator.py)
 
 def test_two_plus_two():
@@ -22,8 +25,16 @@ def test_no_parameters():
     assert calculator.add() == 0
 
 def test_with_three_arguments():
+    """
+    Asserts that when 123,
+    6 should be returned.
+    """
     assert calculator.add(1, 2, 3) == 6
 
 
 def test_with_five_arguments():
+    """
+    Asserts that when 12345,
+    15 should be returned.
+    """
     assert calculator.add(1, 2, 3, 4, 5) == 15
